@@ -1,0 +1,6 @@
+flask
+gunicorn
+transformers
+google-generativeai
+Pillow
+flask-cors
