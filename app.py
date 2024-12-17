@@ -4,13 +4,13 @@ from flask import Flask, request, jsonify
 from PIL import Image
 import google.generativeai as genai
 from flask_cors import CORS
-
+# from dotenv import load_dotenv
 # Initialize Flask App
 app = Flask(__name__)
 CORS(app)  # Enable CORS for cross-origin requests
 
-# Google API Key
-my_api = "AIzaSyAIwrJ_nekXtHomctw2QraDVFQmkDNeYwc"  # Use a real API key here
+# load_dotenv()
+my_api = "AIzaSyAIwrJ_nekXtHomctw2QraDVFQmkDNeYwc"
 os.environ['GOOGLE_API_KEY'] = my_api
 genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
 
